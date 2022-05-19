@@ -61,11 +61,15 @@ img {
   width: 20%;
   height: 30%;
 }
-h6, a{
+h6{
   color: #fff;
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 55px;
+}
+a{
+    top: 55px;
+    color: #fff;
 }
 </style>
 

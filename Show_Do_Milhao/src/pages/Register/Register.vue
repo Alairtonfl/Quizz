@@ -2,7 +2,7 @@
         <fieldset>
             <div id="createAccount">
                 
-               <div id="login-row" class="row justify-content-center align-items-center">
+               <div id="login-row">
                    <form id="login-form" class="form" @submit.prevent="register">
                        <img alt="Vue logo" src="../Login/quizsf.png" />
                         <div class="mb-2">
@@ -57,6 +57,7 @@ img {
   background-color: rgb(255, 238, 0);
   color: rgb(29, 26, 26);
 }
+
 
 </style>
 
