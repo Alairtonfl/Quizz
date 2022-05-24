@@ -35,11 +35,16 @@
                 <label for="falseThree">Resposta Incorreta</label>
                 <input type="text" class="form-control" id="falseThree">
             </div>
+            <div class="form-group">
+                <button class="" id="add" type="submit">ADICIONAR</button>
+                <button class="" id="cancel" type="submit">CANCELAR</button>
+            </div>
+
         </form>
     </div>
 </template>
 
-<script src='./addPerguntas.js'></script>
+<script src='./questions.js'></script>
 
 <style scoped>
     .form-group{
@@ -48,13 +53,25 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        top: 90px;
+        top: 40px;
     }
     h2{
         color: #fff;
         text-align: center;
         position: relative;
-        top: 80px;
+        top: 40px;
     }
+    button{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 20px;
+
+        border-radius: 8px;
+
+        background-color: rgb(241, 241, 18);;
+    }
+
 
 </style>
