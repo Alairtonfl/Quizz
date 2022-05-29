@@ -10,9 +10,15 @@ export default class Question extends BaseEntity {
 
     @Column('text')
       question: string;
+    
+    @Column('text')
+      theme: string;
 
     @Column('int')
       userId: number;
+    
+    @Column('int')
+      dificulty: number;
 
     @ManyToOne(() => User, (user) => user.questions)
       user: User;

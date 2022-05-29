@@ -5,14 +5,16 @@ import Answer from '@Answer/Entity/Answer';
 interface IQuestionRequest {
     question: string;
     userId: number;
+    dificulty: number;
+    theme: string;
     answers: Answer[]
 }
 
 export default new class CreateQuestionService {
-  async execute({ question, userId, answers }: IQuestionRequest): Promise<Question | Error> {
+  async execute({ question, userId, answers, dificulty, theme }: IQuestionRequest): Promise<Question | Error> {
     const questions = new Question();
     Object.assign(questions, {
-      question, userId, answers,
+      question, userId, answers, dificulty, theme
     });
     const model = await CreateQuestionRepository.run(questions);
     return model;

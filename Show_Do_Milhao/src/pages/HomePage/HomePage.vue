@@ -21,7 +21,7 @@
           />
         </svg>
       </button>
-      <button id="btnLogout" >
+      <button id="btnLogout" @click="logout">
         Sair 
       </button>
     </span>

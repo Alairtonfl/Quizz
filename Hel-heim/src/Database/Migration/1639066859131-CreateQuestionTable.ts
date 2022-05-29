@@ -17,9 +17,20 @@ export class CreateQuestionTable1639067199756 implements MigrationInterface {
         {
           name: 'question',
           type: 'VARCHAR',
+          isNullable: false,
         },
         {
           name: 'userId',
+          type: 'int',
+          isNullable: false,
+        },
+        {
+          name: 'theme',
+          type: 'VARCHAR',
+          isNullable: false,
+        },
+        {
+          name: 'dificulty',
           type: 'int',
           isNullable: false,
         },
