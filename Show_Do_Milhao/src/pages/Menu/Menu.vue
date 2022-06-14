@@ -9,9 +9,15 @@
     </div>
     <nav id="menu">
     <fieldset>
-        <input id="edit" type="button" value="Editar Conta">
-      <input  id="delete" type="button" value="Remover Conta">
-      <input  id="delete" type="button" value="Adicionar Perguntas">
+      <a href="./edit">
+       <input id="edit" type="button" value="Editar Conta">
+      </a>
+      <a href="./edit">
+      <input  id="remove" type="button" value="Remover Conta">
+      </a>
+      <a href="./questions">
+      <input  id="addQuestions" type="button" value="Adicionar Perguntas">
+      </a>
       <input  id="delete" type="button" value="Lista de Perguntas">
     </fieldset>
     </nav>
@@ -77,6 +83,10 @@ input{
 
     background-color: #505050;
     color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
 }
 
 </style>

@@ -14,12 +14,19 @@
                 <button type="button" class="btn btn-secondary btn-lg"><label id="d">D</label> 365 ou 366 Dias</button>
             </div>
         </div>
+        <div>
+            <button id="removeQuestions">
+                <img src="./baralho.png" style="height: 40px; margin-left: 5px;" alt="">
+                Remover
+            </button>
+        </div>
     </div>
 </template>
 <script src='./match.js'></script>
 
 <style scoped>
     .form-control{
+
         width: 75%;
         height: 200px;
         margin-left: auto;
@@ -58,9 +65,22 @@
         top: 2%;
         left: -20%;
         background: #000;
+        
     }
     img{
         height: 35px;
+    }
+    #removeQuestions{
+        background-color: #ECB730;
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        top: 15%;
+        right: 2%;
+        font-size: 14px;
+        border-radius: 8%;
+
+        color: rgb(2, 2, 2);
     }
    
 </style>

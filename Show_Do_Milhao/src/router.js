@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage.vue'
 import Menu from './pages/Menu/Menu.vue'
 import Questions from './pages/Questions/Questions.vue'
 import Match from './pages/Match/Match.vue'
+import Edit from './pages/Edit/Edit.vue'
 
 Vue.use(VueRouter)
 
@@ -34,7 +35,12 @@ const routes = [
   {
     path: '/match',
     component: Match
+  },
+  {
+    path: '/edit',
+    component: Edit
   }
+  
    
 ]
 
